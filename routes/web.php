@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,10 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/tugasdua', function () {
-    return view('tugasdua',[
-        'title' => 'Tugas Dua',
-    ]);
-});
+// Route::get('/tugasdua', function () {
+//     return view('tugasdua',[
+//         'title' => 'Tugas Dua',
+//     ]);
+// });
+
+Route::get('/tugasdua', [UserController::class, 'show']);

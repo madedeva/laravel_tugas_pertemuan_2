@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('student_id')->unique();
-            $table->foreignId('prodi_id');
-            $table->foreignId('fakultas_id');
+            $table->foreignId('prodi_id')->nullable();
+            $table->foreignId('fakultas_id')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

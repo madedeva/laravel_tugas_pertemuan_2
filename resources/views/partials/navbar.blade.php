@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link {{ ($title === "Tugas Satu") ? 'active' : ''}}" href="/">Tugas Satu</a>
+          <a class="nav-link  {{ ($title === "Tugas Satu") ? 'active' : ''}}" href="/">Tugas Satu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ ($title === "Tugas Dua") ? 'active' : ''}}" href="/tugasdua">Tugas Dua</a>
