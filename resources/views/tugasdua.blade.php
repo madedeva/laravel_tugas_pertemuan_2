@@ -25,7 +25,7 @@
       <td>{{ $mahasiswa->prodi->nama_prodi }}</td>
       <td>{{ $mahasiswa->fakultas->nama_fakultas }}</td>
     </tr>
-    @endforeach
+  @endforeach
   </tbody>
 </table>
 
